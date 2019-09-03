@@ -1,0 +1,8 @@
+﻿group CsProjCop
+	Microsoft.Build.Locator
+	YamlDotNet
+
+group MSBuild
+	Microsoft.Build copy_local: false
+	Microsoft.Build.Framework copy_local: false
+	Microsoft.Build.Utilities.Core copy_local: false

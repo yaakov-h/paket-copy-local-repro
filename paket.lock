@@ -1,0 +1,39 @@
+
+
+GROUP CsProjCop
+STORAGE: NONE
+RESTRICTION: || (== net46) (== net472)
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Microsoft.Build.Locator (1.2.6)
+    YamlDotNet (6.1.2)
+
+GROUP MSBuild
+STORAGE: NONE
+STRATEGY: MIN
+LOWEST_MATCHING: TRUE
+COPY-LOCAL: FALSE
+COPY-CONTENT-TO-OUTPUT-DIR: NEVER
+RESTRICTION: || (== net46) (== net472)
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Microsoft.Build (15.1.548)
+      Microsoft.Build.Framework (15.1.548)
+    Microsoft.Build.Framework (15.1.548)
+      System.Collections (>= 4.0.11)
+      System.Diagnostics.Debug (>= 4.0.11)
+      System.Globalization (>= 4.0.11)
+      System.Runtime (>= 4.1)
+      System.Runtime.InteropServices (>= 4.1)
+      System.Threading (>= 4.0.11)
+      System.Threading.Thread (>= 4.0)
+    Microsoft.Build.Utilities.Core (15.1.548)
+      Microsoft.Build.Framework (15.1.548)
+    System.Collections (4.0.11)
+    System.Diagnostics.Debug (4.0.11)
+    System.Globalization (4.0.11)
+    System.Runtime (4.1)
+    System.Runtime.InteropServices (4.1)
+      System.Runtime (>= 4.1) - restriction: || (&& (== net46) (< net45)) (&& (== net46) (>= net462)) (== net472)
+    System.Threading (4.0.11)
+    System.Threading.Thread (4.0)

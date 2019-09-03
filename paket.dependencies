@@ -1,0 +1,23 @@
+version 5.216.0 --force-nuget -v
+
+group CsProjCop
+	source https://api.nuget.org/v3/index.json
+	framework: net46, net472
+	storage: none
+
+	nuget Microsoft.Build.Locator
+	nuget YamlDotNet
+
+group MSBuild
+	source https://api.nuget.org/v3/index.json 
+	framework: net46, net472
+	storage: none
+	lowest_matching: true
+	strategy: min
+	
+	copy_local: false
+	copy_content_to_output_dir: never
+	
+	nuget Microsoft.Build >= 15.0
+	nuget Microsoft.Build.Framework >= 15.0
+	nuget Microsoft.Build.Utilities.Core >= 15.0
